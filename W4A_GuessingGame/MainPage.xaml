@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="W4A_GuessingGame.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Purple" Padding="24" CornerRadius="0">
+            <Label Text="Guessing Game" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label x:Name="messageLabel" Text="Guess a number between 1 and 1000" FontSize="Title" TextColor="Black" Padding="30,10,30,10"/>
+        <Entry x:Name="inputEntry" Placeholder="Enter your guess" Margin="30,10,30,10" FontSize="25"></Entry>
+        <Button Text="Check my guess" Margin="30,10,30,10" Clicked="Button_OnClicked" BackgroundColor="Purple" TextColor="White"></Button>
+        <Label x:Name="resultLabel" Text="" FontAttributes="Bold" FontSize="25" Padding="30,10,30,10" HorizontalTextAlignment="Center"></Label>
+
+        <Label Text="By Ayman Tauhid" FontSize="18" Padding="30, 0, 30, 0" HorizontalTextAlignment="Center" Margin="30,180,30,10" TextColor="Purple"/>
+    </StackLayout>
+
+</ContentPage>
